@@ -1,22 +1,21 @@
 package bridge;
 
-public class Dog implements Animal{
+public class Dog extends LandAnimalBridge{
 
-	@Override
 	public String getName() {
 		return "Dog";
 	}
-
+	
 	@Override
-	public boolean livesOnWater() {
-		// TODO Auto-generated method stub
-		return false;
+	public Integer getLegTotal() {
+		return 2;
 	}
 
 	@Override
-	public boolean livesOnLand() {
+	public Integer getEarTotal() {
 		// TODO Auto-generated method stub
-		return true;
+		return 2;
 	}
+
 
 }
